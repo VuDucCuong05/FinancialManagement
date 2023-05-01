@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/on_b_navigation"
+    app:startDestination="@+id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.qltaichinhcanhan.splash.fragment.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash">
+        <action
+            android:id="@+id/action_splashFragment_to_onBoardingFragment"
+            app:destination="@id/onBoardingFragment"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/onBoardingFragment"
+        android:name="com.example.qltaichinhcanhan.splash.fragment.boarding.OnBoardingFragment"
+        android:label="fragment_on_boarding"
+        tools:layout="@layout/fragment_on_boarding">
+
+        <action
+            android:id="@+id/action_onBoardingFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+        <action
+            android:id="@+id/action_onBoardingFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/onBoardingFragment"
+            app:popUpToInclusive="true" />
+
+        <fragment
+            android:id="@+id/onBoarding1Fragment"
+            android:name="com.example.qltaichinhcanhan.splash.fragment.boarding.OnBoarding1Fragment"
+            android:label="fragment_on_boarding1"
+            tools:layout="@layout/fragment_on_boarding1" />
+        <fragment
+            android:id="@+id/onBoarding2Fragment"
+            android:name="com.example.qltaichinhcanhan.splash.fragment.boarding.OnBoarding2Fragment"
+            android:label="OnBoarding2Fragment" />
+
+        <fragment
+            android:id="@+id/onBoarding3Fragment"
+            android:name="com.example.qltaichinhcanhan.splash.fragment.boarding.OnBoarding3Fragment"
+            android:label="OnBoarding3Fragment" />
+        <action
+            android:id="@+id/action_onBoardingFragment_to_creatsMoneyFragment"
+            app:destination="@id/creatsMoneyFragment" />
+        <action
+            android:id="@+id/action_onBoardingFragment_to_languageFragment2"
+            app:destination="@id/languageFragment2" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.example.qltaichinhcanhan.splash.fragment.login.SignUpFragment"
+        android:label="fragment_signup"
+        tools:layout="@layout/fragment_signup">
+        <action
+            android:id="@+id/action_signUpFragment_to_creatsMoneyFragment"
+            app:destination="@id/creatsMoneyFragment" />
+        <action
+            android:id="@+id/action_signUpFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@+id/signUpFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.qltaichinhcanhan.splash.fragment.login.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_creatsMoneyFragment"
+            app:destination="@id/creatsMoneyFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/creatsMoneyFragment"
+        android:name="com.example.qltaichinhcanhan.splash.fragment.CreatsMoneyFragment"
+        android:label="fragment_creats_money"
+        tools:layout="@layout/fragment_creats_money" >
+        <action
+            android:id="@+id/action_creatsMoneyFragment_to_currencyFragment"
+            app:destination="@id/currencyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/currencyFragment"
+        android:name="com.example.qltaichinhcanhan.main.ui.currency.CurrencyFragment"
+        android:label="fragment_currency"
+        tools:layout="@layout/fragment_currency" />
+    <fragment
+        android:id="@+id/languageFragment2"
+        android:name="com.example.qltaichinhcanhan.main.ui.setting.LanguageFragment"
+        android:label="fragment_language"
+        tools:layout="@layout/fragment_language" />
+</navigation>

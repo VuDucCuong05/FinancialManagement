@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.qltaichinhcanhan.main.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_nav_home_to_addTransactionFragment"
+            app:destination="@id/addTransactionFragment" />
+        <action
+            android:id="@+id/action_nav_home_to_transactionByCategoryFragment"
+            app:destination="@id/transactionByCategoryFragment" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_accounts"
+            app:destination="@id/nav_accounts" />
+        <action
+            android:id="@+id/action_nav_home_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_nav_home_to_registerFragment"
+            app:destination="@id/registerFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_accounts"
+        android:name="com.example.qltaichinhcanhan.main.ui.money_accounts.MoneyAccountsFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_accounts">
+        <action
+            android:id="@+id/action_nav_accounts_to_editAccountFragment"
+            app:destination="@id/editAccountFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.qltaichinhcanhan.main.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/nav_category"
+        android:name="com.example.qltaichinhcanhan.main.ui.category.CategoryFragment"
+        android:label="fragment_category"
+        tools:layout="@layout/fragment_category">
+        <action
+            android:id="@+id/actionExpenseToEditCategoryFragment"
+            app:destination="@id/editCategoryFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/editCategoryFragment"
+        android:name="com.example.qltaichinhcanhan.main.ui.category.EditCategoryFragment"
+        android:label="fragment_edit_category"
+        tools:layout="@layout/fragment_edit_category">
+        <action
+            android:id="@+id/action_editCategoryFragment_to_iconCatalogFragment"
+            app:destination="@id/iconCatalogFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/iconCatalogFragment"
+        android:name="com.example.qltaichinhcanhan.main.ui.category.IconCatalogFragment"
+        android:label="fragment_icon_catalog"
+        android:tag="C"
+        tools:layout="@layout/fragment_icon_catalog" />
+    <fragment
+        android:id="@+id/editAccountFragment"
+        android:name="com.example.qltaichinhcanhan.main.ui.money_accounts.EditMoneyAccountFragment"
+        android:label="fragment_edit_account"
+        tools:layout="@layout/fragment_edit_account">
+        <action
+            android:id="@+id/action_editAccountFragment_to_nav_currency"
+            app:destination="@id/nav_currency" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_currency"
+        android:name="com.example.qltaichinhcanhan.main.ui.currency.CurrencyFragment"
+        android:label="fragment_currency"
+        tools:layout="@layout/fragment_currency" >
+        <action
+            android:id="@+id/action_nav_currency_to_currencyConversionFragment"
+            app:destination="@id/currencyConversionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addTransactionFragment"
+        android:name="com.example.qltaichinhcanhan.main.ui.home.AddTransactionFragment"
+        android:label="fragment_add_transaction"
+        tools:layout="@layout/fragment_add_transaction">
+        <action
+            android:id="@+id/action_addTransactionFragment_to_nav_currency"
+            app:destination="@id/nav_currency" />
+        <action
+            android:id="@+id/action_addTransactionFragment_to_addCategoryFragment"
+            app:destination="@id/addCategoryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addCategoryFragment"
+        android:name="com.example.qltaichinhcanhan.main.ui.category.AddCategoryFragment"
+        android:label="fragment_add_category2"
+        tools:layout="@layout/fragment_add_category">
+        <action
+            android:id="@+id/action_addCategoryFragment_to_editCategoryFragment"
+            app:destination="@id/editCategoryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/transactionByCategoryFragment"
+        android:name="com.example.qltaichinhcanhan.main.ui.home.TransactionByCategoryFragment"
+        android:label="fragment_default_transaction"
+        tools:layout="@layout/fragment_transaction_by_category">
+        <action
+            android:id="@+id/action_transactionByCategoryFragment_to_defaultTransactionFragment"
+            app:destination="@id/defaultTransactionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/defaultTransactionFragment"
+        android:name="com.example.qltaichinhcanhan.main.ui.home.DefaultTransactionFragment"
+        android:label="fragment_default_transaction"
+        tools:layout="@layout/fragment_default_transaction">
+        <action
+            android:id="@+id/action_defaultTransactionFragment_to_addTransactionFragment"
+            app:destination="@id/addTransactionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_reminders"
+        android:name="com.example.qltaichinhcanhan.main.ui.reminder.RemindersFragment"
+        android:label="fragment_reminders"
+        tools:layout="@layout/fragment_reminders" >
+        <action
+            android:id="@+id/action_nav_reminders_to_editNotificationFragment"
+            app:destination="@id/editNotificationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editNotificationFragment"
+        android:name="com.example.qltaichinhcanhan.main.ui.reminder.EditNotificationFragment"
+        android:label="fragment_edit_notification"
+        tools:layout="@layout/fragment_edit_notification" />
+    <fragment
+        android:id="@+id/currencyConversionFragment"
+        android:name="com.example.qltaichinhcanhan.main.ui.currency.CurrencyConversionFragment"
+        android:label="fragment_currency_conversion"
+        tools:layout="@layout/fragment_currency_conversion" >
+        <action
+            android:id="@+id/action_currencyConversionFragment_to_nav_currency"
+            app:destination="@id/nav_currency" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_utilities"
+        android:name="com.example.qltaichinhcanhan.main.ui.utilities.UtilitiesFragment"
+        android:label="fragment_utilities"
+        tools:layout="@layout/fragment_utilities" >
+        <action
+            android:id="@+id/action_nav_utilities_to_currencyConversionFragment"
+            app:destination="@id/currencyConversionFragment" />
+        <action
+            android:id="@+id/action_nav_utilities_to_exportFileFragment"
+            app:destination="@id/exportFileFragment" />
+        <action
+            android:id="@+id/action_nav_utilities_to_installmentDepositFragment"
+            app:destination="@id/installmentDepositFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_setting"
+        android:name="com.example.qltaichinhcanhan.main.ui.setting.SettingFragment"
+        android:label="fragment_setting"
+        tools:layout="@layout/fragment_setting" >
+
+        <action
+            android:id="@+id/action_nav_setting_to_languageFragment"
+            app:destination="@id/languageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/languageFragment"
+        android:name="com.example.qltaichinhcanhan.main.ui.setting.LanguageFragment"
+        android:label="fragment_language"
+        tools:layout="@layout/fragment_language" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.qltaichinhcanhan.main.ui.profile.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/exportFileFragment"
+        android:name="com.example.qltaichinhcanhan.main.ui.utilities.ExportFileFragment"
+        android:label="fragment_export_file"
+        tools:layout="@layout/fragment_export_file" >
+        <action
+            android:id="@+id/action_exportFileFragment_to_nav_accounts"
+            app:destination="@id/nav_accounts" />
+        <action
+            android:id="@+id/action_exportFileFragment_to_timeExportFileFragment"
+            app:destination="@id/timeExportFileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/timeExportFileFragment"
+        android:name="com.example.qltaichinhcanhan.main.ui.utilities.TimeExportFileFragment"
+        android:label="fragment_time_export_file"
+        tools:layout="@layout/fragment_time_export_file" />
+    <fragment
+        android:id="@+id/installmentDepositFragment"
+        android:name="com.example.qltaichinhcanhan.main.ui.utilities.InstallmentDepositFragment"
+        android:label="InstallmentDepositFragment" />
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.qltaichinhcanhan.main.ui.profile.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_registerFragment_to_loginFragment2"
+            app:destination="@id/loginFragment2" />
+        <action
+            android:id="@+id/action_registerFragment_to_signUpFragment2"
+            app:destination="@id/signUpFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment2"
+        android:name="com.example.qltaichinhcanhan.splash.fragment.login.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" />
+    <fragment
+        android:id="@+id/signUpFragment2"
+        android:name="com.example.qltaichinhcanhan.splash.fragment.login.SignUpFragment"
+        android:label="fragment_signup"
+        tools:layout="@layout/fragment_signup" />
+
+</navigation>
