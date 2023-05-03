@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.QLTaiChinhCaNhan" parent="Theme.MaterialComponents.Light.NoActionBar">
+    <style name="Theme.financialmanagement" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_500</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
@@ -21,12 +21,12 @@
         <item name="android:windowBackground">@drawable/bg_splash</item>
     </style>
 
-    <style name="Theme.QLTaiChinhCaNhan.NoActionBar">
+    <style name="Theme.financialmanagement.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
 
-    <style name="Theme.QLTaiChinhCaNhan.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.financialmanagement.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
-    <style name="Theme.QLTaiChinhCaNhan.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="Theme.financialmanagement.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

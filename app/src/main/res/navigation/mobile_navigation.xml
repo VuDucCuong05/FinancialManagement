@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/nav_home"
-        android:name="com.example.qltaichinhcanhan.main.ui.home.HomeFragment"
+        android:name="manager.vdc.financialmanagement.main.ui.home.HomeFragment"
         android:label="@string/menu_home"
         tools:layout="@layout/fragment_home">
         <action
@@ -29,7 +29,7 @@
 
     <fragment
         android:id="@+id/nav_accounts"
-        android:name="com.example.qltaichinhcanhan.main.ui.money_accounts.MoneyAccountsFragment"
+        android:name="manager.vdc.financialmanagement.main.ui.money_accounts.MoneyAccountsFragment"
         android:label="@string/menu_gallery"
         tools:layout="@layout/fragment_accounts">
         <action
@@ -39,12 +39,12 @@
 
     <fragment
         android:id="@+id/nav_slideshow"
-        android:name="com.example.qltaichinhcanhan.main.ui.slideshow.SlideshowFragment"
+        android:name="manager.vdc.financialmanagement.main.ui.slideshow.SlideshowFragment"
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_slideshow" />
     <fragment
         android:id="@+id/nav_category"
-        android:name="com.example.qltaichinhcanhan.main.ui.category.CategoryFragment"
+        android:name="manager.vdc.financialmanagement.main.ui.category.CategoryFragment"
         android:label="fragment_category"
         tools:layout="@layout/fragment_category">
         <action
@@ -54,7 +54,7 @@
 
     <fragment
         android:id="@+id/editCategoryFragment"
-        android:name="com.example.qltaichinhcanhan.main.ui.category.EditCategoryFragment"
+        android:name="manager.vdc.financialmanagement.main.ui.category.EditCategoryFragment"
         android:label="fragment_edit_category"
         tools:layout="@layout/fragment_edit_category">
         <action
@@ -63,13 +63,13 @@
     </fragment>
     <fragment
         android:id="@+id/iconCatalogFragment"
-        android:name="com.example.qltaichinhcanhan.main.ui.category.IconCatalogFragment"
+        android:name="manager.vdc.financialmanagement.main.ui.category.IconCatalogFragment"
         android:label="fragment_icon_catalog"
         android:tag="C"
         tools:layout="@layout/fragment_icon_catalog" />
     <fragment
         android:id="@+id/editAccountFragment"
-        android:name="com.example.qltaichinhcanhan.main.ui.money_accounts.EditMoneyAccountFragment"
+        android:name="manager.vdc.financialmanagement.main.ui.money_accounts.EditMoneyAccountFragment"
         android:label="fragment_edit_account"
         tools:layout="@layout/fragment_edit_account">
         <action
@@ -78,7 +78,7 @@
     </fragment>
     <fragment
         android:id="@+id/nav_currency"
-        android:name="com.example.qltaichinhcanhan.main.ui.currency.CurrencyFragment"
+        android:name="manager.vdc.financialmanagement.main.ui.currency.CurrencyFragment"
         android:label="fragment_currency"
         tools:layout="@layout/fragment_currency" >
         <action
@@ -87,7 +87,7 @@
     </fragment>
     <fragment
         android:id="@+id/addTransactionFragment"
-        android:name="com.example.qltaichinhcanhan.main.ui.home.AddTransactionFragment"
+        android:name="manager.vdc.financialmanagement.main.ui.home.AddTransactionFragment"
         android:label="fragment_add_transaction"
         tools:layout="@layout/fragment_add_transaction">
         <action
@@ -99,7 +99,7 @@
     </fragment>
     <fragment
         android:id="@+id/addCategoryFragment"
-        android:name="com.example.qltaichinhcanhan.main.ui.category.AddCategoryFragment"
+        android:name="manager.vdc.financialmanagement.main.ui.category.AddCategoryFragment"
         android:label="fragment_add_category2"
         tools:layout="@layout/fragment_add_category">
         <action
@@ -108,7 +108,7 @@
     </fragment>
     <fragment
         android:id="@+id/transactionByCategoryFragment"
-        android:name="com.example.qltaichinhcanhan.main.ui.home.TransactionByCategoryFragment"
+        android:name="manager.vdc.financialmanagement.main.ui.home.TransactionByCategoryFragment"
         android:label="fragment_default_transaction"
         tools:layout="@layout/fragment_transaction_by_category">
         <action
@@ -117,7 +117,7 @@
     </fragment>
     <fragment
         android:id="@+id/defaultTransactionFragment"
-        android:name="com.example.qltaichinhcanhan.main.ui.home.DefaultTransactionFragment"
+        android:name="manager.vdc.financialmanagement.main.ui.home.DefaultTransactionFragment"
         android:label="fragment_default_transaction"
         tools:layout="@layout/fragment_default_transaction">
         <action
@@ -126,7 +126,7 @@
     </fragment>
     <fragment
         android:id="@+id/nav_reminders"
-        android:name="com.example.qltaichinhcanhan.main.ui.reminder.RemindersFragment"
+        android:name="manager.vdc.financialmanagement.main.ui.reminder.RemindersFragment"
         android:label="fragment_reminders"
         tools:layout="@layout/fragment_reminders" >
         <action
@@ -135,12 +135,12 @@
     </fragment>
     <fragment
         android:id="@+id/editNotificationFragment"
-        android:name="com.example.qltaichinhcanhan.main.ui.reminder.EditNotificationFragment"
+        android:name="manager.vdc.financialmanagement.main.ui.reminder.EditNotificationFragment"
         android:label="fragment_edit_notification"
         tools:layout="@layout/fragment_edit_notification" />
     <fragment
         android:id="@+id/currencyConversionFragment"
-        android:name="com.example.qltaichinhcanhan.main.ui.currency.CurrencyConversionFragment"
+        android:name="manager.vdc.financialmanagement.main.ui.currency.CurrencyConversionFragment"
         android:label="fragment_currency_conversion"
         tools:layout="@layout/fragment_currency_conversion" >
         <action
@@ -149,7 +149,7 @@
     </fragment>
     <fragment
         android:id="@+id/nav_utilities"
-        android:name="com.example.qltaichinhcanhan.main.ui.utilities.UtilitiesFragment"
+        android:name="manager.vdc.financialmanagement.main.ui.utilities.UtilitiesFragment"
         android:label="fragment_utilities"
         tools:layout="@layout/fragment_utilities" >
         <action
@@ -164,7 +164,7 @@
     </fragment>
     <fragment
         android:id="@+id/nav_setting"
-        android:name="com.example.qltaichinhcanhan.main.ui.setting.SettingFragment"
+        android:name="manager.vdc.financialmanagement.main.ui.setting.SettingFragment"
         android:label="fragment_setting"
         tools:layout="@layout/fragment_setting" >
 
@@ -174,17 +174,17 @@
     </fragment>
     <fragment
         android:id="@+id/languageFragment"
-        android:name="com.example.qltaichinhcanhan.main.ui.setting.LanguageFragment"
+        android:name="manager.vdc.financialmanagement.main.ui.setting.LanguageFragment"
         android:label="fragment_language"
         tools:layout="@layout/fragment_language" />
     <fragment
         android:id="@+id/profileFragment"
-        android:name="com.example.qltaichinhcanhan.main.ui.profile.ProfileFragment"
+        android:name="manager.vdc.financialmanagement.main.ui.profile.ProfileFragment"
         android:label="fragment_profile"
         tools:layout="@layout/fragment_profile" />
     <fragment
         android:id="@+id/exportFileFragment"
-        android:name="com.example.qltaichinhcanhan.main.ui.utilities.ExportFileFragment"
+        android:name="manager.vdc.financialmanagement.main.ui.utilities.ExportFileFragment"
         android:label="fragment_export_file"
         tools:layout="@layout/fragment_export_file" >
         <action
@@ -196,16 +196,16 @@
     </fragment>
     <fragment
         android:id="@+id/timeExportFileFragment"
-        android:name="com.example.qltaichinhcanhan.main.ui.utilities.TimeExportFileFragment"
+        android:name="manager.vdc.financialmanagement.main.ui.utilities.TimeExportFileFragment"
         android:label="fragment_time_export_file"
         tools:layout="@layout/fragment_time_export_file" />
     <fragment
         android:id="@+id/installmentDepositFragment"
-        android:name="com.example.qltaichinhcanhan.main.ui.utilities.InstallmentDepositFragment"
+        android:name="manager.vdc.financialmanagement.main.ui.utilities.InstallmentDepositFragment"
         android:label="InstallmentDepositFragment" />
     <fragment
         android:id="@+id/registerFragment"
-        android:name="com.example.qltaichinhcanhan.main.ui.profile.RegisterFragment"
+        android:name="manager.vdc.financialmanagement.main.ui.profile.RegisterFragment"
         android:label="fragment_register"
         tools:layout="@layout/fragment_register" >
         <action
@@ -217,12 +217,12 @@
     </fragment>
     <fragment
         android:id="@+id/loginFragment2"
-        android:name="com.example.qltaichinhcanhan.splash.fragment.login.LoginFragment"
+        android:name="manager.vdc.financialmanagement.splash.fragment.login.LoginFragment"
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" />
     <fragment
         android:id="@+id/signUpFragment2"
-        android:name="com.example.qltaichinhcanhan.splash.fragment.login.SignUpFragment"
+        android:name="manager.vdc.financialmanagement.splash.fragment.login.SignUpFragment"
         android:label="fragment_signup"
         tools:layout="@layout/fragment_signup" />
 

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.qltaichinhcanhan">
+    package="manager.vdc.financialmanagement">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -23,7 +23,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.QLTaiChinhCaNhan"
+        android:theme="@style/Theme.financialmanagement"
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
 
@@ -33,10 +33,10 @@
             android:exported="true"
             android:label="@string/title_activity_ndmain"
             android:launchMode="singleTop"
-            android:theme="@style/Theme.QLTaiChinhCaNhan.NoActionBar" />
+            android:theme="@style/Theme.financialmanagement.NoActionBar" />
         <activity
             android:screenOrientation="portrait"
-            android:name="com.example.qltaichinhcanhan.splash.OnBoardingScreenActivity"
+            android:name=".splash.OnBoardingScreenActivity"
             android:exported="true"
             android:theme="@style/SplashTheme">
             <intent-filter>
@@ -48,7 +48,7 @@
 
         <provider
             android:name="androidx.core.content.FileProvider"
-            android:authorities="com.example.qltaichinhcanhan.fileprovider"
+            android:authorities="manager.vdc.financialmanagement.fileprovider"
             android:grantUriPermissions="true"
             android:exported="false">
             <meta-data
